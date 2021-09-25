@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMS - Blog</title>
+
+    <!-- favicon para el navegador -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png"/>
+    <!-- CSS de Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Mis Estilos CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<body>
+
+<!-- cabecera y navbar -->
+<div class="fixed-top">
+    <!-- Pequeño header fijo junto con el navbar -->
+    <header class="container-fluid bg-primary d-flex justify-content-center">
+        <p class="text-light mb-0 p-2 fs-6">Contactanos +54 (3865) 421630</p>
+    </header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar_main">
+        <div class="container">
+            <!-- Logo del navbar -->
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo_cms.svg" alt="logo_navbar" id="logo_navbar">
+            </a>
+            <!-- Boton de collapse -->
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarMain"
+                    aria-controls="navbarMain"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Opciones colapsable -->
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">Blog</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contacto</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Sobre Nosotros</a></li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Suscríbete</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!-- Carousel -->
+<div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <!-- Indicadores de abajo para seleccionar un slide en particular -->
+    <ol class="carousel-indicators">
+        <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+        <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+    </ol>
+    <!-- Botones para pasar al siguiente o al anterior -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="overlay-image" style="background-image: url(assets/img/carousel1_650.jpg)"></div>
+            <div class="container">
+                <h1>Confianza y Responsabilidad</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eligendi in ipsa libero minima
+                    nam
+                    nostrum optio quibusdam temporibus veniam.</p>
+                <a href="#" class="btn btn-primary">Asociate ya</a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="overlay-image" style="background-image: url(assets/img/carousel2_650.jpg)"></div>
+            <div class="container">
+                <h1>Instalaciones Propias</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eligendi in ipsa libero minima
+                    nam
+                    nostrum optio quibusdam temporibus veniam.</p>
+                <a href="#" class="btn btn-primary">Galeria de Imagenes</a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="overlay-image" style="background-image: url(assets/img/carousel3_650.jpg)"></div>
+            <div class="container">
+                <h1>Contrato con todas las OS</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eligendi in ipsa libero minima
+                    nam
+                    nostrum optio quibusdam temporibus veniam.</p>
+                <a href="#" class="btn btn-primary">Ver listado</a>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<!-- Page content-->
+<main class="container mt-3">
+    <div class="row">
+        <!-- Ultimos Post del Blog -->
+        <div class="col-lg-8">
+            <!-- Ultimo Post lo ponemos mas grande -->
+            <div class="card mb-4">
+                <a href="last_post.html">
+                    <img class="card-img-top" src="assets/img/imagen_post_last_1.jpg" alt="imagen_post_last"/>
+                </a>
+                <div class="card-body">
+                    <div class="small text-muted">22 de Sep. 2021</div>
+                    <h2 class="card-title">Diagnostico por Imagen</h2>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid
+                        atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero
+                        voluptate voluptatibus possimus, veniam magni quis!</p>
+                    <a class="btn btn-primary" href="last_post.html">Leer mas</a>
+                </div>
+            </div>
+            <!-- Entradas siguiente al ultimo Post -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <!-- Blog post-->
+                    <div class="card mb-4">
+                        <a href="#">
+                            <img class="card-img-top" src="assets/img/post_1.jpg" alt="post_1"/>
+                        </a>
+                        <div class="card-body">
+                            <div class="small text-muted">2 de Ago. 2021</div>
+                            <h2 class="card-title h4">Coronavirus en Numeros</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
+                                aliquid atque, nulla.</p>
+                            <a class="btn btn-primary" href="#">Leer mas</a>
+                        </div>
+                    </div>
+                    <!-- Blog post-->
+                    <div class="card mb-4">
+                        <a href="#">
+                            <img class="card-img-top" src="assets/img/post_2.jpg" alt="post_2"/>
+                        </a>
+                        <div class="card-body">
+                            <div class="small text-muted">5 de Jun. 2021</div>
+                            <h2 class="card-title h4">Curso Cardiologia CMS</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
+                                aliquid atque, nulla.</p>
+                            <a class="btn btn-primary" href="#">Leer mas</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <!-- Blog post-->
+                    <div class="card mb-4">
+                        <a href="#">
+                            <img class="card-img-top" src="assets/img/post_3.jpg" alt="post_3"/>
+                        </a>
+                        <div class="card-body">
+                            <div class="small text-muted">19 de Abr. 2021</div>
+                            <h2 class="card-title h4">Emergentologia 107</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
+                                aliquid atque, nulla.</p>
+                            <a class="btn btn-primary" href="#">Leer mas</a>
+                        </div>
+                    </div>
+                    <!-- Blog post-->
+                    <div class="card mb-4">
+                        <a href="#">
+                            <img class="card-img-top" src="assets/img/post_4.jpg" alt="post_4"/>
+                        </a>
+                        <div class="card-body">
+                            <div class="small text-muted">16 de Mar. 2021</div>
+                            <h2 class="card-title h4">Pediatria HRC</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
+                                aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam.</p>
+                            <a class="btn btn-primary" href="#">Leer mas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Paginacion -->
+            <nav aria-label="Pagination">
+                <hr class="my-0"/>
+                <ul class="pagination justify-content-center my-4">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Primeros</a>
+                    </li>
+                    <li class="page-item active" aria-current="page">
+                        <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#">...</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">15</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#!">Ultimos</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Widgets y Publicidad -->
+        <div class="col-lg-4">
+            <!-- Widget de Busqueda -->
+            <div class="card mb-4">
+                <div class="card-header">Buscar</div>
+                <div class="card-body">
+                    <div class="input-group">
+                        <input class="form-control" type="text" placeholder="Que buscar..."
+                               aria-label="Que buscar..." aria-describedby="button-search"/>
+                        <button class="btn btn-primary" id="button-search" type="button">Ir !</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Categorias -->
+            <div class="card mb-4">
+                <div class="card-header">Categorias</div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#" class="text-decoration-none">Contable</a></li>
+                                <li><a href="#" class="text-decoration-none">Liquidaciones</a></li>
+                                <li><a href="#" class="text-decoration-none">AFIP</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#" class="text-decoration-none">Cursos</a></li>
+                                <li><a href="#" class="text-decoration-none">Quincho</a></li>
+                                <li><a href="#" class="text-decoration-none">Reservas</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Widget Publicidad -->
+            <div class="card mb-4" id="publicidad">
+                <div class="card-header">Area de Publicidad</div>
+                <div class="card-body">
+                    <img src="assets/img/publicidad2.jpg" alt="publicidad" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- footer -->
+<footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container text-center text-md-start">
+        <div class="row text-center text-md-start">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 text-center">
+                <h5 class="mb-4 fw-bold text-warning">Circulo Medico del SUR</h5>
+                <img src="assets/img/logo_cms.svg" alt="logo_cms" id="logo_footer">
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="mb-4 fw-bold text-warning">Productos</h5>
+                <p><a href="#" class="text-white text-decoration-none">Facturación</a></p>
+                <p><a href="#" class="text-white text-decoration-none">Asistencia</a></p>
+                <p><a href="#" class="text-white text-decoration-none">Recreación</a></p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="mb-4 fw-bold text-warning">Links Utiles</h5>
+                <p><a href="#" class="text-white text-decoration-none">Facturación</a></p>
+                <p><a href="#" class="text-white text-decoration-none">Asistencia</a></p>
+                <p><a href="#" class="text-white text-decoration-none">Recreación</a></p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="mb-4 fw-bold text-warning">Contacto</h5>
+                <p><i class="bi bi-house-fill me-2"></i>Ernesto Padilla 165</p>
+                <p><i class="bi bi-envelope-fill me-2"></i>info@cms.org</p>
+                <p><i class="bi bi-telephone-fill me-2"></i>03865-424-200</p>
+            </div>
+        </div>
+        <hr class="mb-4">
+        <div class="row align-items-center">
+            <div class="col-md-7 col-lg-8">
+                <p>Derechos Reservados a:
+                    <a href="#" class="text-decoration-none">
+                        <strong class="text-warning">G3-Rolling Code</strong>
+                    </a>
+                </p>
+            </div>
+            <div class="col-md-5 col-lg-4">
+                <div class="text-center text-md-end">
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item">
+                            <a href="#" class="btn text-white fs-4"><i class="bi bi-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="btn text-white fs-4"><i class="bi bi-twitter"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="btn text-white fs-4"><i class="bi bi-instagram"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="btn text-white fs-4"><i class="bi bi-google"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
