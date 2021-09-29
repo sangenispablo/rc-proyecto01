@@ -117,3 +117,69 @@ body {
         height: 10rem;
     }
 }
+
+/* Galeria css agregado por camila */
+.galeryImg {
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 200ms ease;
+}
+
+.galeryImg:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .4);
+    transform: translateY(-3%);
+}
+
+.pages-icons {
+    list-style: none;
+}
+
+/* About us agregado por Fernanda */
+.mi-card {
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 200ms ease;
+}
+
+.mi-card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .4);
+    transform: translateY(-3%);
+}
+
+
+.mi-card-img-top {
+    width: 200px;
+    height: 200px;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+/* estilos para contacto.html */
+.mi-map {
+    height: 400px;
+    width: 500px;
+    border: 0;
+}
+
+@media (max-width: 576px) {
+    .mi-map {
+        height: 200px;
+        width: 100%;
+    }
+}
+
+/* Estilos para error404 */
+.error-template {
+    padding: 40px 15px;
+    text-align: center;
+}
+
+.error-actions {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.error-actions .btn {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
