@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 1- pagina login</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png"/>
+
+    <!-- Estilos de Bootstrap 5.1 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Mis Estilos -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Iconos de FontAwesone 5.15.1  -->
+    <script data-search-pseudo-elements defer
+            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"
+            crossorigin="anonymous"></script>
+    <!-- Iconos de Feather Icons (son de bootstrap)  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.24.1/feather.min.js"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container text-center" id="login">
+    <div class="row">
+        <div class="col-md-6 order-md-2"><img class="w-100 h-100" src="assets/img/imagen login.jpg" alt=""></div>
+        <div class="col-md-6 order-md-1">
+            <!-- form -->
+            <form action="#">
+                <div class="mb-4 w-100">
+                    <label for="validacion-usuario" class="form-label">usuario</label>
+                    <input type="email" class="form-control" id="validacion-usuario" value="">
+                </div>
+
+                <div class="mb-4 w-100">
+                    <label for="validacion-contraseña" class="form-label">contraseña</label>
+                    <input type="password" class="form-control" id="validacion-contraseña" value="">
+                    <div class="invalid-feedback">
+                        error
+                    </div>
+                </div>
+                <div class="mb-4 form-check ">
+                    <input type="checkbox" name="connected" class="form-checkbox-input" id="connected">
+                    <label for="connected" class="form-check-label"> mantenerme conectado</label>
+                </div>
+                <div class="d-grid">
+                    <button class="btn btn-outline-primary w-100 text-black" type="submit">login</button>
+                    <br>
+                    <span><a href="#" class="nav-link my-3 text-decoration-none" data-bs-toggle="modal"
+                             data-bs-target="#modal-password">recuperar contraseña</a></span>
+                </div>
+                <!-- loggin buttoms -->
+                <div class="container w-100 my-3">
+                    <div class="row text-center">
+                        <div class="col-12">
+                            iniciar sesion tambien con
+                        </div>
+                        <div class="row my-3">
+                            <div class="col">
+                                <button class="btn btn-outline-primary  w-100">
+                                    <div class="row align-items-center">
+                                        <div class="col-2">
+                                            <img src="assets/img/facebook logo.png" alt="" width="32">
+                                        </div>
+                                        <div class="col-10"><span> <a href="#" data-bs-toggle="modal"
+                                                                      data-bs-target="#modal-facebook"
+                                                                      class="nav link text-decoration-none text-black">Facebook</a></span>
+
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="col">
+                                </button>
+                                <button class="btn btn-outline-danger w-100">
+                                    <div class="row align-items-center">
+                                        <div class="col-2">
+                                            <img src="assets/img/google logo.png" alt="" width="32">
+                                        </div>
+                                        <div class="col-10">
+                                            <span><a href="#" data-bs-toggle="modal" data-bs-target="#modal-google"
+                                                     class="text-decoration-none text-black">Google</a></span>
+
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- modal recuperar password -->
+<div class="modal fade" id="modal-password" tabindex="-5" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Recupero de Contraseña</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="validationemail" class="form-label">email registrado </label>
+                        <input type="email" class="form-control" id="validationemail" aria-describedby="email"
+                               placeholder="email" value="" required>
+                        <div class="invalid-feedback">
+                            error
+                        </div>
+                        <br>
+                        <div class="mb-3">
+                            <label for="examplecode" class="form-label">codigo enviado al email</label>
+                            <input type="number" class="form-control" id="examplecode" aria-describedby="emailHelp"
+                                   placeholder="codigo">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">contraseña</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" aria-describedby="emailHelp"
+                               placeholder="nueva contraseña">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword2" class="form-label">repetir contraseña</label>
+                        <input type="password" class="form-control" id="exampleInputPassword2" aria-describedby="emailHelp"
+                               placeholder="nueva contraseña">
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cerrar</button>
+                <button type="submit" class="btn btn-primary" href="#">Confirmar Cambio</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- loggin con google-->
+<div class="modal fade" id="modal-google" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Iniciar sesion con Google</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="correo-electronico" class="form-label">poner email registrado en google</label>
+                        <input type="email" class="form-control" id="correo-electronico" aria-describedby="email"
+                               placeholder="email" value="" required>
+                        <div class="invalid-feedback">
+                            error
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputpassgoogle" class="form-label">contraseña</label>
+                        <input type="password" class="form-control" id="inputpassgoogle"
+                               aria-describedby="contraseña-google" placeholder="contraseña">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cerrar</button>
+                <button type="submit" class="btn btn-outline-danger" href="#">Login</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- login con facebook -->
+<div class="modal fade" id="modal-facebook" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Iniciar sesion con facebook</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="validationemail" class="form-label">poner email registrado en Facebook</label>
+                        <input type="email" class="form-control" id="correo-electronico" aria-describedby="email"
+                               placeholder="email" value="" required>
+                        <div class="invalid-feedback">
+                            error
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">contraseña</label>
+                        <input type="password" class="form-control" id="inputpassfacebook" aria-describedby="emailHelp"
+                               placeholder="contraseña">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cerrar</button>
+                <button type="submit" class="btn btn-primary" href="#">Login</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

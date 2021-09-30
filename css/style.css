@@ -183,3 +183,21 @@ body {
     margin-right: 10px;
     margin-bottom: 10px;
 }
+
+/* Estilos para el login */
+#login {
+    background-color: #E3F2FD;
+}
+
+.fondo-login {
+    background: #b3d1e3;
+    background: linear-gradient(to right, #022c46, #0a1dec);
+    margin-top: 0;
+}
+
+.bg-imagen {
+    background-image: url("../assets/img/login_small.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
