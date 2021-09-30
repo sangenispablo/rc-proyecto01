@@ -174,25 +174,25 @@
                 <h4 class="modal-title" id="exampleModalLabel">Suscripción</h4>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+            <form action="#">
             <div class="modal-body">
-                <form>
                     <div class="mb-3">
                         <label for="name" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Nombre">
+                        <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Nombre" required>
                     </div>
                     <div class="mb-3">
                         <label for="apellido" class="form-label">Apellido</label>
                         <input type="text" class="form-control" id="apellido" aria-describedby="apellido"
-                               placeholder="Apellido">
+                               placeholder="Apellido" required>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                               placeholder="ejemplo@rc-group3.com">
+                               placeholder="ejemplo@rc-group3.com" required>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="*****">
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="*****" required>
                     </div>
                     <div class="mb-3 form-check">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -202,12 +202,12 @@
                         <label> ¿Ya tienes cuenta? <a class="text-primary text-decoration-none"
                                                                           href="login2.html">Inicia Sesión</a></label>
                     </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                <button type="button" class="btn btn-primary">Suscríbete</button>
-            </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Suscríbete</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
